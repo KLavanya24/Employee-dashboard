@@ -3,9 +3,9 @@
 <head>
     <title>Login</title>
 </head>
-<body style="text-align:center; margin-top:100px;">
+<body style="text-align:center; margin-top:100px; font-family:sans-serif;">
 
-<h2>Login Page</h2>
+<h2>Employee Login</h2>
 
 <input type="text" id="username" placeholder="Username"><br><br>
 <input type="password" id="password" placeholder="Password"><br><br>
@@ -20,7 +20,7 @@ function login() {
     if(u === "admin" && p === "1234"){
         window.location.href = "login.html";
     } else {
-        alert("Wrong login");
+        alert("Invalid Login");
     }
 }
 </script>
