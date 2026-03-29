@@ -1,55 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Login</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: #0f172a;
-      font-family: Arial;
-    }
-    .box {
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-    }
-    input {
-      display: block;
-      margin: 10px 0;
-      padding: 10px;
-      width: 200px;
-    }
-    button {
-      padding: 10px;
-      width: 100%;
-      background: #3b82f6;
-      color: white;
-      border: none;
-    }
-  </style>
+    <title>Login</title>
 </head>
-<body>
+<body style="text-align:center; margin-top:100px;">
 
-<div class="box">
-  <h2>Login</h2>
-  <input type="text" id="user" placeholder="Username">
-  <input type="password" id="pass" placeholder="Password">
-  <button onclick="login()">Login</button>
-</div>
+    <h2>Login</h2>
 
-<script>
-function login() {
-  if (user.value === "admin" && pass.value === "1234") {
-    localStorage.setItem("login", "true");
-    location.href = "index.html";
-  } else {
-    alert("Wrong login");
-  }
-}
-</script>
+    <input type="text" id="username" placeholder="Username"><br><br>
+    <input type="password" id="password" placeholder="Password"><br><br>
+
+    <button onclick="login()">Login</button>
+
+    <script>
+        function login() {
+            let user = document.getElementById("username").value;
+            let pass = document.getElementById("password").value;
+
+            if(user === "admin" && pass === "1234") {
+                window.location.href = "login.html";
+            } else {
+                alert("Invalid Login");
+            }
+        }
+    </script>
 
 </body>
 </html>
