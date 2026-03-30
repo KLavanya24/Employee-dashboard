@@ -17,8 +17,11 @@
 
     <br>
 
+    <input type="text" id="empId" placeholder="Employee ID">
     <input type="text" id="name" placeholder="Name">
+    <input type="text" id="deptId" placeholder="Department ID">
     <input type="number" id="salary" placeholder="Salary">
+    <input type="date" id="hireDate">
     <button onclick="saveEmployee()">Save</button>
 
     <br><br>
@@ -27,19 +30,28 @@
 
     <br><br>
 
-    <table border="1" width="100%">
+    <table border="1">
         <thead>
             <tr>
+                <th>ID</th>
                 <th>Name</th>
+                <th>Dept</th>
                 <th>Salary</th>
+                <th>Hire Date</th>
                 <th>Action</th>
             </tr>
         </thead>
         <tbody id="tableBody"></tbody>
     </table>
 
+    <br>
+
+    <canvas id="chart"></canvas>
+
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
