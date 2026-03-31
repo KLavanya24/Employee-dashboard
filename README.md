@@ -32,8 +32,7 @@ Password: 1234
 ---
 
 ## 🌐 Live Project Link
-https://github.com/KLavanya24/Employee-management.git
-
+https://klavanya24.github.io/Employee-management/
 ---
 
 ## 📂 How to Run
